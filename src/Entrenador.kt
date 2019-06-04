@@ -2,6 +2,7 @@
 * Clase Entrenador hija de Seleccion
 * */
 
+///ddd
 class Entrenador(var idFederacion: Int, id: Int, nome: String, apelido: String, edade: Int)
     : Seleccion(id, nome, apelido, edade) {
 

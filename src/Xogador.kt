@@ -1,6 +1,7 @@
 /*
 * Clase Xogador hija de Seleccion
 * */
+//dd
 
 class Xogador(var dorsal: Int , var demarcacion: String ,id: Int, nome: String, apelido: String, edade: Int)
     : Seleccion(id, nome, apelido, edade) {

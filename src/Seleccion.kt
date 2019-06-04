@@ -17,3 +17,4 @@ open class Seleccion (var id: Int,var nome: String , var apelido:String="" , var
     }
 
 }
+
