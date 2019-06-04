@@ -1,4 +1,9 @@
-class Entrenador(var idFederacion:Int=0, String = "default value") : Seleccion{
+/*
+* Clase Entrenador hija de Seleccion
+* */
+
+class Entrenador(var idFederacion: Int, id: Int, nome: String, apelido: String, edade: Int)
+    : Seleccion(id, nome, apelido, edade) {
 
 
     constructor(id: Int, nome: String, apelido: String, edade: Int) : super(id, nome, apelido, edade) {}
