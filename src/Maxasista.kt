@@ -1,14 +1,12 @@
-class Maxasista(var titulacion: String="default values", var anosExperiencia: Int = 0): Seleccion{
+/*
+* Clase Maxasista hija de Seleccion
+* */
 
 
-    constructor(id: Int, nome: String, apelido: String, edade: Int) : super(id, nome, apelido, edade) {}
+class Maxasista(var titulacion: String, var anosExperiencia: Int, id: Int, nome: String, apelido: String, edade: Int)
+    : Seleccion(id, nome, apelido, edade){
 
-    constructor(titulacion: String, anosExperiencia: Int, id: Int, nome: String, apelido: String, edade: Int) : super(id, nome, apelido, edade) {
-    this.titulacion = titulacion
-    this.anosExperiencia = anosExperiencia
-}
-
-    override fun toString(): String {
+override fun toString(): String {
         return ("Maxasista: \n ID :\t" + super.id + "\n NOME: \t" + super.nome
                 + "\n APELIDOS: \t" + super.apelido + "\n EDADE: \t" + super.edade
                 + "\n TITULACION: \t" + titulacion + "\n ANOS DE EXPERIENCIA: \t" + anosExperiencia)
@@ -19,5 +17,7 @@ class Maxasista(var titulacion: String="default values", var anosExperiencia: In
     }
 
 
-    fun darMasaxes() {}
+    fun darMasaxes() {
+        println("\nMaxasista traballando")
+    }
 }
