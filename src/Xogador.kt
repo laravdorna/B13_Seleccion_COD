@@ -1,12 +1,13 @@
-class Xogador(var dorsal: Int = 0, var demarcacion: String = "defoult value") : Seleccion {
+/*
+* Clase Xogador hija de Seleccion
+* */
+
+class Xogador(var dorsal: Int , var demarcacion: String ,id: Int, nome: String, apelido: String, edade: Int)
+    : Seleccion(id, nome, apelido, edade) {
 
 
+    init {
 
-    constructor(id: Int, nome: String, apelido: String, edade: Int) : super(id, nome, apelido, edade) {}
-
-    constructor(dorsal: Int, demarcacion: String, id: Int, nome: String, apelido: String, edade: Int) : super(id, nome, apelido, edade) {
-        this.dorsal = dorsal
-        this.demarcacion = demarcacion
     }
 
     override fun toString(): String {
